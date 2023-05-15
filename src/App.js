@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import { Container } from '@material-ui/core';
+import Dashboard from './Dashboard';
+
+const useStyles = makeStyles((theme) => ({
+  container: {
+    marginTop: theme.spacing(4),
+    marginBottom: theme.spacing(4),
+  },
+}));
 
 function App() {
+  const classes = useStyles();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container maxWidth="lg" className={classes.container}>
+        <Dashboard />
+      </Container>
     </div>
   );
 }
 
 export default App;
+

@@ -1,0 +1,21 @@
+.App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .tableContainer {
+    margin-bottom: 20px;
+  }
+  
+  .filterContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
